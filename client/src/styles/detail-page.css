@@ -1,0 +1,11 @@
+.detail-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: var(--main-color);
+}
+
+.light-mode {
+  background-color: var(--third-color);
+}

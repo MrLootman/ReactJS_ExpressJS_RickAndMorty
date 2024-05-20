@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+	--main-color: #272B33;
+	--second-color: #474C50;
+	--third-color: #E3E2E2;
+
+	--primary-font: "Freeman", sans-serif;
+	--secondary-font: "Roboto", sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+	margin: 0;
+	font-family: var(--primary-font);
+}
+
+ul {
+	list-style-type: none;
+  padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.2rem;
+	font-family: var(--secondary-font);
+}
+
+button, input {
+	font-family: var(--secondary-font);
+}
+
+.light-theme {
+  background-color: var(--third-color);
+
+  & .login-area {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+	
+	& h1 {
+    color: black;
+  }
+}
+
+.home-page, .detail-page, .page-not-found, .login-page, .light-theme {
+	transition: all 0.5s ease;
+}

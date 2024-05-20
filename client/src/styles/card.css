@@ -1,0 +1,65 @@
+.card, .detailed-card {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--second-color);
+}
+
+.card {
+  &:has(> figcaption.no-results) {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  & img:has(+ .no-results) {
+    height: 20rem;
+  }
+
+  & figcaption {
+    text-align: center;
+    font-size: 24px;
+    padding: 12px 0;
+    color: white;
+  }
+}
+
+.detailed-card {
+  display: flex;
+  width: 50vw;
+  gap: 4rem;
+  align-items: center;
+
+  & hgroup>section {
+    padding: 1rem 0;
+  }
+  
+  & hgroup>h2 {
+    font-size: 2.5rem;
+    color: var(--third-color);
+    font-weight: bold;
+  }
+
+  & section>h4 {
+    font-size: 1.5rem;
+    color: var(--third-color);
+    font-weight: bold;
+  }
+
+  & section>p {
+    font-size: 1.4rem;
+    color: var(--first-color);
+    font-weight: bold;
+  }
+
+  & hgroup>h3 {
+    font-size: 1.5rem;
+    color: var(--third-color);
+    font-weight: bold;
+  }
+
+  & hgroup>figcaption {
+    font-size: 1.4rem;
+    color: var(--third-color);
+    padding: 1rem 0;
+  }
+}
